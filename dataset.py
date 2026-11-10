@@ -1,7 +1,24 @@
 import pandas as pd
 import numpy as np
+import pandas as pd
+import pandas as pd
+import gdown
+import os
 
-A=pd.read_csv('Jan2017Trans.csv')
+file_id = "1E4YC-VeOPNkWtH4e2KW9B8Rvp6tMKRQ7"
+
+file_path = "Jan2017Trans.csv"
+
+if not os.path.exists(file_path):
+    url = f"https://drive.google.com/uc?id={file_id}"
+
+    gdown.download(
+        url,
+        file_path,
+        quiet=False
+    )
+
+A = pd.read_csv(file_path)
 print(A['amount'].sum())
 
 TOP5=A.groupby('customer_id')['amount'].sum().sort_values(ascending=False).head(5)
