@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 # ◈ TRANSACT: Transaction Intelligence Dashboard
 
 An interactive financial analytics dashboard built with **Streamlit**, **Pandas** and **Plotly**. It takes one month of card-transaction data (January 2017), merges it with customer and card information, cleans it, explores it, and presents the findings across nine dashboard pages: spending trends, online vs offline behaviour, customer segments, cards, merchants and a simple rule-based risk engine.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://transaction-analysis-7pg4vnhhankncigbv6ooer.streamlit.app/)
 
-🔗 **Live Demo:** [https://your-app-name.streamlit.app](https://your-app-name.streamlit.app)
+🔗 **Live Demo:** [https://transaction-analysis-7pg4vnhhankncigbv6ooer.streamlit.app/](https://transaction-analysis-7pg4vnhhankncigbv6ooer.streamlit.app/)
 
 > **Why I built this:** to practise the full analytics workflow end to end: raw data → cleaning → EDA → insights → an interactive app anyone can click through.
 
@@ -116,8 +115,8 @@ project/
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/officialhimanshu9964/Transaction-Analysis.git
+cd Transaction-Analysis
 
 # 2. (Optional) create a virtual environment
 python -m venv venv
@@ -326,10 +325,6 @@ The page then shows counts per level, risk by payment method, a credit-score vs 
 
 ## 🙋 Author
 
-Built by **<Your Name>**: [GitHub](https://github.com/<your-username>) · [LinkedIn](https://linkedin.com/in/<your-profile>)
+Built by **Himanshu Mishra**: [GitHub](https://github.com/officialhimanshu9964) · [LinkedIn](https://www.linkedin.com/in/himanshu-mishra-419954425)
 
 If you found this useful, feel free to ⭐ the repo!
-=======
-# Transaction-Analysis
-An interactive Streamlit-based Transaction Intelligence Dashboard for analyzing financial transactions, customer behavior, merchant performance, spending patterns, and transaction risk through data visualization and exploratory analytics.
->>>>>>> 47e7820017d45628e12859f35cdd60cf6a27ebb4
