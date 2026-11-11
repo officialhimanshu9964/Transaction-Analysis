@@ -13,6 +13,7 @@ from pages_code.offline import offline_analysis
 from pages_code.card import card_analysis
 from pages_code.risk import showrisk
 from pages_code.merchant import showmerchant
+from pages_code.buisness import buisness
 
 
 st.set_page_config(
@@ -56,7 +57,8 @@ with st.sidebar:
             "Card Analysis",
             "Detail Analysis",
             "Merchant Analysis",
-            "Risk Analysis"
+            "Risk Analysis",
+            "Buisness Insigts"
         ],
         icons=[
             "grid-1x2",
@@ -68,6 +70,7 @@ with st.sidebar:
             "building",
             "shop-window",
             "shield-check",
+            "graph-up"
         ],
         menu_icon="layers",
         default_index=0,
@@ -160,3 +163,6 @@ elif page == "Merchant Analysis":
 elif page == "Risk Analysis":
     st.title("Risk & Anomaly Analysis")
     showrisk()
+
+elif page == "Buisness Insigts":
+    buisness()
